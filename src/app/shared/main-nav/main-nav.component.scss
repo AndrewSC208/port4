@@ -1,0 +1,64 @@
+// TOP NAV:
+#mainNav {
+	// gneral nav styles:
+	background-color: rgba(0,0,0,0);
+	border-bottom: 1px solid #000;
+	
+	.hamburger {
+		margin:3px -15px 0 0;
+		
+		&:focus {
+			outline:none;
+		}
+	}
+
+	.navbar-brand {
+		height: 60px;
+	}
+
+	.active {
+		background-color: black;
+		color: white;
+		border-radius: 3px;
+
+	}
+
+	.links {
+		padding-right: 15px;
+		margin-top: 4px;
+	}
+	
+	a img.saturn-icon {
+  	padding: 0 0 0 15px;
+	}
+
+	.box {
+		padding-top: 10px;
+		margin-top: 20px;
+		border: 1px solid black;
+		position: fixed;
+		float: right;
+		right: 15px;
+		background-color: red;
+		width: 250px;
+		display:none;
+
+		ul {
+
+			li {
+				list-style-type: none;
+				left: 25px;
+			}
+		}
+	}
+
+	.is-open {
+		display: block;
+	}
+
+	@media (min-width: 768px) {
+		.hamburger {
+			margin-right: 5px;
+		}
+	}
+}
