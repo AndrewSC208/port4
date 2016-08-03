@@ -3,8 +3,6 @@
 import { By }           from '@angular/platform-browser';
 import { DebugElement } from '@angular/core';
 
-import { CarouselComponent } from '../shared/carousel/carousel.component';
-
 import {
   beforeEach, beforeEachProviders,
   describe, xdescribe,
@@ -12,11 +10,11 @@ import {
   async, inject
 } from '@angular/core/testing';
 
-import { AboutComponent } from './about.component';
+import { CarouselComponent } from './carousel.component';
 
-describe('Component: About', () => {
+describe('Component: Carousel', () => {
   it('should create an instance', () => {
-    let component = new AboutComponent();
+    let component = new CarouselComponent();
     expect(component).toBeTruthy();
   });
 });

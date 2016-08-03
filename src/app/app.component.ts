@@ -5,6 +5,9 @@ import { AboutComponent } from './about/about.component';
 import { HomeComponent } from './home/home.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { ContactComponent } from './contact/contact.component';
+import { SkillsComponent } from './skills/skills.component';
+import 'chartjs';
+
 
 
 @Component({
@@ -12,7 +15,7 @@ import { ContactComponent } from './contact/contact.component';
   selector: 'app-root',
   templateUrl: 'app.component.html',
   styleUrls: ['app.component.css'],
-  directives: [MainNavComponent, AboutComponent, HomeComponent, ROUTER_DIRECTIVES]
+  directives: [MainNavComponent, AboutComponent, HomeComponent, ROUTER_DIRECTIVES, SkillsComponent]
 })
 export class AppComponent {
   title = "App component";

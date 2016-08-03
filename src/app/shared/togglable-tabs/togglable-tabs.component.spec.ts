@@ -3,8 +3,6 @@
 import { By }           from '@angular/platform-browser';
 import { DebugElement } from '@angular/core';
 
-import { CarouselComponent } from '../shared/carousel/carousel.component';
-
 import {
   beforeEach, beforeEachProviders,
   describe, xdescribe,
@@ -12,11 +10,11 @@ import {
   async, inject
 } from '@angular/core/testing';
 
-import { AboutComponent } from './about.component';
+import { TogglableTabsComponent } from './togglable-tabs.component';
 
-describe('Component: About', () => {
+describe('Component: TogglableTabs', () => {
   it('should create an instance', () => {
-    let component = new AboutComponent();
+    let component = new TogglableTabsComponent();
     expect(component).toBeTruthy();
   });
 });

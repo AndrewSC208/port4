@@ -7,10 +7,22 @@
  **********************************************************************************************/
 /** Map relative paths to URLs. */
 const map: any = {
+  'moment': 'vendor/moment/moment.js',
+  'ng2-charts': 'vendor/ng2-charts',
+  'chartjs': 'vendor/chart.js/dist/Chart.bundle.min.js',
+  'color-name': 'vendor/color-name/index.js',
+  'color-convert': 'vendor/color-convert/index.js',
+  'chartjs-color': 'vendor/chartjs-color/dist/color.js',
+  'chartjs-color-string': 'vendor/chartjs-color-string/color-string.js',
 };
 
 /** User packages configuration. */
 const packages: any = {
+  'moment':{
+    format: 'cjs'
+  },
+  'ng2-charts': { defaultExtension: 'js', main: 'ng2-charts.js' },
+  'chartjs': { defaultExtension: 'js', format: 'cjs' }
 };
 
 ////////////////////////////////////////////////////////////////////////////////////////////////
@@ -39,6 +51,10 @@ const barrels: string[] = [
   'app/home',
   'app/portfolio',
   'app/contact',
+  'app/skills',
+  'app/shared/carousel',
+  'app/shared/togglable-tabs',
+  'app/skills/shared/html-doughnut',
   /** @cli-barrel */
 ];
 
@@ -62,3 +78,6 @@ System.config({
 
 // Apply the user's configuration.
 System.config({ map, packages });
+
+
+
