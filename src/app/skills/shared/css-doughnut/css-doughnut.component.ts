@@ -3,21 +3,19 @@ import { CHART_DIRECTIVES } from 'ng2-charts/ng2-charts';
 
 @Component({
   moduleId: module.id,
-  selector: 'html-doughnut',
-  templateUrl: 'html-doughnut.component.html',
-  styleUrls: ['html-doughnut.component.css'],
+  selector: 'css-doughnut',
+  templateUrl: 'css-doughnut.component.html',
+  styleUrls: ['css-doughnut.component.css'],
   directives: [ CHART_DIRECTIVES ]
 })
-
-export class HtmlDoughnutComponent implements OnInit {
-
+export class CssDoughnutComponent implements OnInit {
 	constructor() {}
 
   ngOnInit() {
   }
 
 	// Doughnut
-  private doughnutChartData:number[] = [350, 450];
+  private doughnutChartData:number[] = [27, 83];
   private doughnutChartType:string = 'doughnut';
   private doughnutChartColors: any[] = [
     { backgroundColor: ["#000fff", "#000000"]}

@@ -55,6 +55,11 @@ const barrels: string[] = [
   'app/shared/carousel',
   'app/shared/togglable-tabs',
   'app/skills/shared/html-doughnut',
+  'app/css-doughnut',
+  'app/js-doughnut',
+  'app/skills/shared/css-doughnut',
+  'app/skills/shared/js-doughnut',
+  'app/contact/msg-form',
   /** @cli-barrel */
 ];
 

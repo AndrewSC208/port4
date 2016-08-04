@@ -3,6 +3,12 @@
 I NEED TO FIGURE OUT HOW TO FIX THE CHART SECTION IMPORT, FOR SOME REASON I AM GETTING A VERY WEIRD ERROR!!!!!
 
 ## Main components:
+===============================
+///////////////////////////////
+M.V.P - GET IS ONLINE THEN TEST
+///////////////////////////////
+===============================
+
 HOME: 
 *** Add container:
 	1. Add full page background (I even thought that a cool video would be nice, but I prob don't have the time)
@@ -25,9 +31,13 @@ ABOUT ME:
 			c. Education:
 
 SKILLS:
-	1. Add charts.js (donuts).
-	2. Add list of skills from portfolio.
+	1. DONE ++: Add charts.js (donuts). :++
+		a. Style charts in skills section.
+		b. Add correct values.
+		c. remove legend.
+	2. PLACEHOLDER ADDED ++ Add list of skills from portfolio. ++ JUST NEEDS STYLING
 	3. Add download button for my resume.
+	4. Intro blurb of why I have taylored my skills in the direction that I have.
 
 PORTFOLIO:
 	1. Add thumbnails of portfolio websites.
@@ -36,6 +46,15 @@ PORTFOLIO:
 
 CONTACT:
 	1. Contact form (email)
+		a. name, subject, message, from email address, submit. 
+			i. mailgun to send me the email, and print a message to the screen saying it's been sent. 
+			ii. use mailgun to then send to my personal email account. 
+			iiv. this will allow me to block my personal gmail. 
+	2. Google map's api for the background.
+
+LOADING PAGE:
+	1. Dark gray background
+	2. loading saturn svg icon in the middle of the screen!
 
 ## Shard Compo9nents:
 MAIN-NAV:
