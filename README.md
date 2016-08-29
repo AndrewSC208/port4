@@ -1,22 +1,39 @@
-# Port4
-
-I NEED TO FIGURE OUT HOW TO FIX THE CHART SECTION IMPORT, FOR SOME REASON I AM GETTING A VERY WEIRD ERROR!!!!!
-
-## Main components:
+# Portfolio
 ===============================
 ///////////////////////////////
-M.V.P - GET IS ONLINE THEN TEST
+GET THIS ONLINE - ASAP
 ///////////////////////////////
 ===============================
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+8.16.2016
+
+MISC:
+	1. Decide on the font stack, and get it into angular.
+
+SPLASH_SCREEN:
+	1. Dark background with "Saturn" logo glowing the in the center. Maybe a similar color to the home background image.
+	2. Add glowing images, maybe just start with a light version of Saturn.
+		=> The glowing would be cool but not needed right away.
+		=> ** For some reason the svg icon is moving to a different area, I might be able to add the same styles to the home component to fix this. **
+
 
 HOME: 
-*** Add container:
-	1. Add full page background (I even thought that a cool video would be nice, but I prob don't have the time)
-		*** IMG_6510
-				6805 (birds)
-	2. [Jumbotron] Header text (Hi, <br /> My name is Andrew Meiling <br /> I am a Front-end Developer in San Diego)
+	1. Add full-page background (I even thought that a cool video would be nice, but I prob don't have the time)
+	2. Header text (Hi, <br /> My name is Andrew Meiling <br /> I am a Front-end Developer in San Diego)
 	3. Button 
 		##=>About me page with text of "MORE ABOUT ME"
+
+MAIN_NAV:
+	1. Change colors to a light color scheme, that will go well on darker background colors;
+	2. Add hover colors and animations to nav elements. Like a light gray
+	3. Updated the active color on selected items
+	4. Update text positioning
+	5. Update button styles, and when the button's clicked navigate => "About Me"
+	6. On mobile center text and button.
+	7. Close nav when link's are clicked.
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 ABOUT ME:
 	1. Center the whole row vertically:
@@ -52,17 +69,11 @@ CONTACT:
 			iiv. this will allow me to block my personal gmail. 
 	2. Google map's api for the background.
 
-LOADING PAGE:
-	1. Dark gray background
-	2. loading saturn svg icon in the middle of the screen!
 
-## Shard Compo9nents:
-MAIN-NAV:
-	1. Fix the trigger icon.
-	2. Hide the menu when links are not displayed in the navbar.
-	3. Add the hamburgers
-	4. Animation open and close.
-	5. Animate closed when when focus is taken off the menue.
+LATER MISC ITEMS:
+	1. Add good animated transitions when each main component.
+
+## Shard Components:
 
 CAROUSEL:
 	1. Fix the controls
@@ -71,3 +82,8 @@ CAROUSEL:
 TOGGALBLE-TABS:
 	1. Make them look like they should be apart of the theme.
 	2. Center vertically in the element
+
+/////// THOUGHTS:
+1. stop thinking and start doing!
+2. Program some shit today.
+	- learning one thing a day is bullshit. I learn like 10 things a day when I roll up my sleeves and start doing!!!

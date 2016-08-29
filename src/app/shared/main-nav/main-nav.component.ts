@@ -9,7 +9,6 @@ import { ROUTER_DIRECTIVES } from '@angular/router';
   directives: [ROUTER_DIRECTIVES]
 })
 export class MainNavComponent implements OnInit {
-	links = ["/About", "/Home"];
 
   constructor() {}
 

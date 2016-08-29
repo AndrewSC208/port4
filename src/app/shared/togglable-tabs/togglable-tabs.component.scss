@@ -1,3 +1,21 @@
 .nav-tabs {
-	border-bottom: 1px solid black;
+	border-bottom: 1px solid rgba(255,255,255, 1);
+
+	a {
+		color: rgba(255,255,255, 1);
+
+	}
+
+	li, a {
+		border-radius: 0px;
+		border-bottom: 0px;
+
+		&:hover {
+			background-color: rgba(255,255,255, .35);
+		}
+	}
+
+	.active > a {
+		color: #262D35;
+	}	
 }

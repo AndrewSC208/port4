@@ -1,14 +1,11 @@
-export class MSG {
+export class Message {
 	
 	constructor(
-		public id: number,
-		public sender: string,
-		public email: string,
-		public subject: string,
-		public message: string,
-		//public date: Date
-		// ? denotes an optional paramenter
-		public funFact?: string
+		 public sender_name  : string,
+		 public email        : string,
+		 public subject      : string,
+		 public message_body : string,
+		 public fun_fact     : string
 	){ }
 
 }

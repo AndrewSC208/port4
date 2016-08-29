@@ -18,15 +18,17 @@ export class CssDoughnutComponent implements OnInit {
   private doughnutChartData:number[] = [27, 83];
   private doughnutChartType:string = 'doughnut';
   private doughnutChartColors: any[] = [
-    { backgroundColor: ["#000fff", "#000000"]}
+    { 
+      backgroundColor: ["#000fff", "#000000"]
+    }
   ];
 
   // events
   private chartClicked(e:any):void {
-    console.log(e);
+    //console.log(e);
   }
 
   private chartHovered(e:any):void {
-    console.log(e);
+    //console.log(e);
   }
 }
