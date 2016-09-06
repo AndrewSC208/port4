@@ -14,20 +14,21 @@ export class MessageService {
 	/* ++ EXTERNAL CLASS METHODS ++ */
 	getMessages() {
   		return this.http.get(this.messageUrl).map(res => res.json());
-  	}
+  }
 
-  	postMessage(message: Message) {
+  postMessage(message: Message) {
   	
-  		let body = JSON.stringify({message});
-  		let headers = new Headers({ 'Content-Type': 'application/json' });
-  		let options = new RequestOptions({ headers: headers, method: 'post' });
+  	let body = JSON.stringify({message});
+  	let headers = new Headers({ 'Content-Type': 'application/json' });
+  	let options = new RequestOptions({ headers: headers, method: 'post' });
 
-  		return this.http.post(this.messageUrl, body, options)
-	  		.map(res => res.json())
-  			.catch(this.handleError);
+  	return this.http.post(this.messageUrl, body, options)
+      // THIS IS THE RESPONSE FROM THE SERVER
+	 		.map(res => res.json())
+  		.catch(this.handleError);
   	}
 
-	/* ++ PRIVATE CLASS METHODS ++ */
+	  /* ++ PRIVATE CLASS METHODS ++ */
   	private handleError (error: Response) {
   		console.error(error);
   		return Observable.throw(error.json().error || 'error');

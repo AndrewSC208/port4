@@ -15,20 +15,10 @@ export class CssDoughnutComponent implements OnInit {
   }
 
 	// Doughnut
-  private doughnutChartData:number[] = [27, 83];
+  private doughnutChartData:number[] = [67, 33];
   private doughnutChartType:string = 'doughnut';
   private doughnutChartColors: any[] = [
-    { 
-      backgroundColor: ["#000fff", "#000000"]
-    }
+    { backgroundColor: ["rgba(255,255,255, .10)", "#262D35"]}
   ];
 
-  // events
-  private chartClicked(e:any):void {
-    //console.log(e);
-  }
-
-  private chartHovered(e:any):void {
-    //console.log(e);
-  }
 }

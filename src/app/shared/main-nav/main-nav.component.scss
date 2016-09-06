@@ -17,7 +17,7 @@
 	}
 
 	.active {
-		background-color: rgba(255,255,255,1);
+		background-color: rgba(255,255,255,.25);
 		color: #262D35;
 	}
 
@@ -28,7 +28,7 @@
 		margin-bottom: 0px;
 
 		@media(max-width: 768px) {
-			background-color: #262D35;
+			background-color: rgba(255,255,255, .75);
 		}
 	}
 
@@ -37,7 +37,9 @@
 	}
 	
 	li:hover {
-			background-color: rgba(255,255,255,.35);
+			background-color: lighten(rgba(255,255,255,.25), 100);
+			-webkit-transition: background-color .5s;
+    	transition: background-color .5s;
 	}
 
 	a {

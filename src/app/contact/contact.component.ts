@@ -16,10 +16,11 @@ export class ContactComponent implements OnInit {
 	message: Message;
 	postMessageRes: string;
   title:string = "The Sky is the limit, drop me a line and find out how far we can go!";
-  photo:string = "http://res.cloudinary.com/drkmakxkk/image/upload/v1472018997/contacts-bg_hsfmsr.png";
+  photo:string = "https://res.cloudinary.com/drkmakxkk/image/upload/v1472441474/contacts-bg-hi_kwaril.jpg";
 
   constructor(private _httpMessageService: MessageService) {
-  	this.message = { 
+  	// I think these is a better way to build another message object
+    this.message = { 
       sender_name : "", 
       email: "", 
       subject: "", 
@@ -47,10 +48,18 @@ export class ContactComponent implements OnInit {
 
   postMessage() {
   	this._httpMessageService.postMessage( this.message )
-  		.subscribe(
-  			res   => this.postMessageRes = res,
-  			error => console.log("Error Http post"),
-  			()    => console.log("post is complete")
-  		);
+  	.subscribe(
+  	  // set the reg value for res:
+      res   => this.postMessageRes = res,
+  	  error => console.log("and error occured"),
+  	  ()    =>  this.message = { 
+                  sender_name : "", 
+                  email: "", 
+                  subject: "", 
+                  message_body: "", 
+                  fun_fact: ""
+                }
+     )
   }
+
 }

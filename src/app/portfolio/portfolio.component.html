@@ -4,27 +4,22 @@
       <div class="inner cover">
 				<div class="container" >
 					
-					<div class="row">
+					<div class="center-block row deck">
 					
-						<div class="col-sm-6 card">
-							<h2>Brandly</h2>
+						<!-- first get one working, then add *ngFor for each item in portfolio array -->
+						<!-- <app-portfolio-item *ngFor="let item of portfolioItems"></app-portfolio-item> -->
+						<div *ngFor="let item of portfolioItems" class="center-block col-sm-6 card">
+ 
+ 							<h2>{{ item.title }}</h2>
+							<img class="img-responsive" [src]="item.imgUrl">
 							
+							<div class="row button-row center-block">
+								<a target="_blank" [href]="item.url" class="btn col-sm-6"><i class="fa fa-paper-plane-o" aria-hidden="true"></i>Visit</a>	
+								<a target="_blank" [href]="item.sourceUrl" class="btn col-sm-6"><i class="fa fa-github-alt" aria-hidden="true"></i>Source Code</a>	
+							</div>
+
 						</div>
-						<div class="col-sm-6 card">
-							<h2>Simpl Biz</h2>
-						</div>
-					
-					</div><!-- ./row -->
-					
-					<div class="row">
-					
-						<div class="col-sm-6 card">
-							<h2>Tiny One</h2>
-						</div>
-						<div class="col-sm-6 card">
-							<h2>Two of a kind!</h2>
-						</div>
-					
+						
 					</div><!-- ./row -->
 
 				</div><!-- ./container -->

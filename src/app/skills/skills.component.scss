@@ -1,4 +1,19 @@
 // component placement
+@import 'https://fonts.googleapis.com/css?family=Open+Sans|Orbitron';
+
+h1, h2, h3, h4, h5 {
+  font-family: 'Orbitron', sans-serif;
+  font-weight: bold;
+}
+
+li {
+  font-family: 'Open-Sans', sans-serif;
+}
+
+.container {
+  background-color: #262D35;
+}
+
 .site-wrapper {
 	color: rgba(255,255,255, 1);
 }
@@ -36,7 +51,32 @@
   margin-top: 45px;
 }
 
+// card:
+.card {
+  background-color: rgba(255,255,255,.10);
+  border: 1px solid rgba(255,255,255,.25);
+  border-radius: 0px;
+  
+  ul {
+    margin-top: 10px;
+    li {
+      text-align: center;
+    }
+  }
+}
+
 #doughnuts {
   background-color: #262D35;
+  margin: 30px 0 0 0;
+
+  
+  div {
+    padding: 20px 10px;
+
+    h2 {
+      margin-top: 0px;
+      text-align: center;
+    }
+  }
 }
 

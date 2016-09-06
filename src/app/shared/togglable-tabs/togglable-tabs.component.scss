@@ -1,3 +1,8 @@
+.tabs {
+	padding-top: 5px;
+	padding-bottom: 15px;
+}
+
 .nav-tabs {
 	border-bottom: 1px solid rgba(255,255,255, 1);
 
@@ -11,11 +16,16 @@
 		border-bottom: 0px;
 
 		&:hover {
-			background-color: rgba(255,255,255, .35);
+			background-color: rgba(255,255,255, .10);
+			-webkit-transition: background-color .5s;
+    	transition: background-color .5s;
 		}
 	}
 
 	.active > a {
 		color: #262D35;
+		background-color: rgba(255,255,255, .25);
+		-webkit-transition: background-color .5s;
+    transition: background-color .5s;
 	}	
 }

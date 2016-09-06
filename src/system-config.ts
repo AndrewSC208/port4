@@ -18,9 +18,7 @@ const map: any = {
 
 /** User packages configuration. */
 const packages: any = {
-  'moment':{
-    format: 'cjs'
-  },
+  'moment':{ format: 'cjs' },
   'ng2-charts': { defaultExtension: 'js', main: 'ng2-charts.js' },
   'chartjs': { defaultExtension: 'js', format: 'cjs' }
 };
@@ -60,6 +58,8 @@ const barrels: string[] = [
   'app/skills/shared/css-doughnut',
   'app/skills/shared/js-doughnut',
   'app/contact/msg-form',
+  'app/shared/portfolio-item/portfolio-item',
+  'app/shared/portfolio-item',
   /** @cli-barrel */
 ];
 
