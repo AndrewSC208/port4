@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { MessageService } from './message.service';
 import { Observable } from 'rxjs/Observable';
+
+import { MessageService } from './message.service';
 import { Message } from './message';
 
 

@@ -12,6 +12,9 @@ import { TogglableTabsComponent } from '../shared/togglable-tabs/togglable-tabs.
 })
 export class AboutComponent implements OnInit {
 	// about data - this will be pulled in from a service component at some point
+	
+	photo: string = 'https://res.cloudinary.com/drkmakxkk/image/upload/v1473261779/about-bg-dsk_gvdpwt.png';
+
 	private about = {
 		// add all about page data here!
 		title : 'About Page',

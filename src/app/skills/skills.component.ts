@@ -13,6 +13,9 @@ import { JsDoughnutComponent } from './shared/js-doughnut/js-doughnut.component'
 
 export class SkillsComponent implements OnInit {
 	title = "Skills Section";
+
+  photo: string = "https://res.cloudinary.com/drkmakxkk/image/upload/v1473223537/about-bg-dsk_p32zhw.png";
+
   constructor() {}
 
   ngOnInit() {
