@@ -20,7 +20,7 @@ export class HtmlDoughnutComponent implements OnInit {
   private doughnutChartData:number[] = [75, 25];
   private doughnutChartType:string = 'doughnut';
   private doughnutChartColors: any[] = [
-    { backgroundColor: ["rgba(255,255,255, .10)", "#262D35"]}
+    { backgroundColor: ["rgba(255,255,255, .75)", "rgba(255,255,255, .10)"]}
   ];
 
 }

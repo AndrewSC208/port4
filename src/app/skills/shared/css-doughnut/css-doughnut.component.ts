@@ -18,7 +18,7 @@ export class CssDoughnutComponent implements OnInit {
   private doughnutChartData:number[] = [67, 33];
   private doughnutChartType:string = 'doughnut';
   private doughnutChartColors: any[] = [
-    { backgroundColor: ["rgba(255,255,255, .10)", "#262D35"]}
+    { backgroundColor: ["rgba(255,255,255, .75)", "rgba(255,255,255, .10)"]}
   ];
 
 }

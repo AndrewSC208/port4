@@ -21,10 +21,10 @@ export class PortfolioComponent implements OnInit {
       "sourceUrl" : "http://github.com/AndrewSC208/branded",
     },
     {
-      "title"     : "Simple Biz",
-      "imgUrl"    : "https://res.cloudinary.com/drkmakxkk/image/upload/v1473344633/simple_biz_xurizl.png",
-      "url"       : "http://andrewmeilingsimplebiz.s3-website-us-west-2.amazonaws.com/",
-      "sourceUrl" : "https://github.com/AndrewSC208/simple_biz",
+      "title"     : "Two Of A Kind",
+      "imgUrl"    : "https://res.cloudinary.com/drkmakxkk/image/upload/v1473345206/two_of_a_kind_nhiukm.png",
+      "url"       : "http://andrewmeilingtwoofakind.s3-website-us-west-2.amazonaws.com/",
+      "sourceUrl" : "https://github.com/AndrewSC208/two-of-a-kind",
     },
     {
       "title"     : "Tiny One",
@@ -33,10 +33,10 @@ export class PortfolioComponent implements OnInit {
       "sourceUrl" : "https://github.com/AndrewSC208/TinyOne",
     },
     {
-      "title"     : "Two Of A Kind",
-      "imgUrl"    : "https://res.cloudinary.com/drkmakxkk/image/upload/v1473345206/two_of_a_kind_nhiukm.png",
-      "url"       : "http://andrewmeilingtwoofakind.s3-website-us-west-2.amazonaws.com/",
-      "sourceUrl" : "https://github.com/AndrewSC208/two-of-a-kind",
+      "title"     : "Simple Biz",
+      "imgUrl"    : "https://res.cloudinary.com/drkmakxkk/image/upload/v1473344633/simple_biz_xurizl.png",
+      "url"       : "http://andrewmeilingsimplebiz.s3-website-us-west-2.amazonaws.com/",
+      "sourceUrl" : "https://github.com/AndrewSC208/simple_biz",
     },
   ]   
   

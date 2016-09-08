@@ -19,6 +19,6 @@ export class JsDoughnutComponent implements OnInit {
   private doughnutChartData:number[] = [88, 12];
   private doughnutChartType:string = 'doughnut';
   private doughnutChartColors: any[] = [
-    { backgroundColor: ["rgba(255,255,255, .10)", "#262D35"]}
+    { backgroundColor: ["rgba(255,255,255, .75)", "rgba(255,255,255, .10)"]}
   ];
 }
