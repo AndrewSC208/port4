@@ -2,8 +2,20 @@
 
 @import 'https://fonts.googleapis.com/css?family=Open+Sans|Orbitron';
 
+// component styles!!!
+h1 {
+	text-align: center;
+	font-family: 'Orbitron', sans-serif;
+  	font-weight: bold;
+	font-size: 48px;
+	padding: 48px 0;
+}
+
 .container {
-	
+background-color: rgba(255,255,255,.10);
+  border: 1px solid rgba(255,255,255,.25);
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 // component placement
@@ -36,11 +48,7 @@
   background-color: #262D35;
 }
 
-// component styles!!!
-h1 {
-	font-family: 'Orbitron', sans-serif;
-  font-weight: bold;
-}
+
 
 .box {
 	width: 100%;
@@ -48,9 +56,8 @@ h1 {
 	border: 1px solid white;
 }
 
-.section-title {
-	margin-top: 45px;
-	margin-bottom: 45px;
+.bottom-row {
+	padding-bottom: 48px;
 }
 
 hr {

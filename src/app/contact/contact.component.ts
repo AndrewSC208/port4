@@ -16,8 +16,8 @@ export class ContactComponent implements OnInit {
 	messages;
 	message: Message;
 	postMessageRes: string;
-  title:string = "The Sky is the limit, drop me a line and find out how far we can go!";
-  photo:string = "https://res.cloudinary.com/drkmakxkk/image/upload/v1472441474/contacts-bg-hi_kwaril.jpg";
+  title:string = "Send a Message";
+  photo:string = "https://res.cloudinary.com/drkmakxkk/image/upload/v1473479255/space2-bg_lztkmp.jpg";
 
   constructor(private _httpMessageService: MessageService) {
   	// I think these is a better way to build another message object

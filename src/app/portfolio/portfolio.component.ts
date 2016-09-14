@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['portfolio.component.css'],
 })
 export class PortfolioComponent implements OnInit {
-  photo: string = "https://res.cloudinary.com/drkmakxkk/image/upload/v1473223537/about-bg-dsk_p32zhw.png";
+  photo: string = "https://res.cloudinary.com/drkmakxkk/image/upload/v1473476897/water-bg_ng3hfo.jpg";
 	title = "Portfolio";
 	
   // need to make and intergace for this, and import from a different file

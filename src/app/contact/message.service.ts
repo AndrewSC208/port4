@@ -6,14 +6,15 @@ import { Message } from './message';
 @Injectable()
 export class MessageService {
 	/* ++ CLASS VARIABLES ++ */
-	private messageUrl: string = 'https://morning-journey-82445.herokuapp.com/messages';
+	private baseURl: string = 'https://morning-journey-82445.herokuapp.com';
+	private tableUrl: string = '/messages';
 	message: Message;
 
 	constructor(private http: Http) {}
 
 	/* ++ EXTERNAL CLASS METHODS ++ */
 	getMessages() {
-  		return this.http.get(this.messageUrl).map(res => res.json());
+  		return this.http.get(this.baseURl + this.tableUrl).map(res => res.json());
   }
 
   postMessage(message: Message) {
@@ -22,7 +23,7 @@ export class MessageService {
   	let headers = new Headers({ 'Content-Type': 'application/json' });
   	let options = new RequestOptions({ headers: headers, method: 'post' });
 
-  	return this.http.post(this.messageUrl, body, options)
+  	return this.http.post(this.baseURl + this.tableUrl, body, options)
       // THIS IS THE RESPONSE FROM THE SERVER
 	 		.map(res => res.json())
   		.catch(this.handleError);

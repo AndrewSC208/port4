@@ -1,4 +1,5 @@
-// TOP NAV:
+// TOP NAV
+@import 'https://fonts.googleapis.com/css?family=Open+Sans|Orbitron';
 #mainNav {
 	// gneral nav styles:
 	background-color: rgba(255,255,255,.10);
@@ -18,7 +19,7 @@
 
 	.active {
 		background-color: rgba(255,255,255,.25);
-		color: #262D35;
+		color: rgba(255,255,255,1);
 	}
 
 	.links {
@@ -33,18 +34,24 @@
 	}
 
 	li {
-			color: white;
+		color: white;
+		border: 1px solid rgba(255,255,255, 0);
 	}
 	
 	li:hover {
-			background-color: lighten(rgba(255,255,255,.25), 100);
-			-webkit-transition: background-color .5s;
+		border: 1px solid rgba(255,255,255, .75);
+		-webkit-transition: border .5s;
+    	transition: border .5s;
+		background-color: lighten(rgba(255,255,255,.25), 100);
+		-webkit-transition: background-color .5s;
     	transition: background-color .5s;
 	}
 
 	a {
 		color: rgba(255,255,255, 1);
 		font-family: 'Raleway', sans-serif;
+  		color: rgba(255,255,255, 1);
+  		font-family: 'Orbitron', sans-serif;
 	}
 	
 	a img.saturn-icon {
