@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ROUTER_DIRECTIVES } from '@angular/router';
 
 import { CarouselComponent } from '../shared/carousel/carousel.component';
 import { TogglableTabsComponent } from '../shared/togglable-tabs/togglable-tabs.component';
@@ -8,7 +9,7 @@ import { TogglableTabsComponent } from '../shared/togglable-tabs/togglable-tabs.
   selector: 'about',
   templateUrl: 'about.component.html',
   styleUrls: ['about.component.css'],
-  directives: [ CarouselComponent, TogglableTabsComponent ],
+  directives: [ CarouselComponent, TogglableTabsComponent, ROUTER_DIRECTIVES ],
 })
 export class AboutComponent implements OnInit {
 	// about data - this will be pulled in from a service component at some point

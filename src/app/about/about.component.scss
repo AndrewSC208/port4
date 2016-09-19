@@ -58,6 +58,56 @@ background-color: rgba(255,255,255,.10);
 
 .bottom-row {
 	padding-bottom: 48px;
+
+
+  .btn {
+  	padding: 10px 20px;
+  	font-weight: bold;
+	border-radius: 0;
+	background-color: rgba(255,255,255, .10);
+	color: white;
+    margin: 10px 0;
+    padding: 25px 55px;
+    font-family: 'Raleway', sans-serif;
+  }
+
+  .btn:link {
+    border-radius: 0;
+    background-color: rgba(255,255,255, .10);
+    color: white;
+    margin: 10px 0;
+    padding: 25px 55px;
+    font-family: 'Raleway', sans-serif;
+  }
+
+  .btn:visited {
+    border-radius: 0;
+    background-color: rgba(255,255,255, .10);
+    color: white;
+    margin: 10px 0;
+    padding: 25px 55px;
+    font-family: 'Raleway', sans-serif; 
+  }
+
+  // need to add an animation
+  .btn:hover {
+    background-color: darken(rgba(255,255,255, .10), 100);
+    border-color: rgba(255,255,255, 1); 
+    color: white;
+    -webkit-transition: background-color .5s;
+    transition: background-color .5s;
+  }
+
+  .btn:active {
+    background-color: rgba(0,34,45, .50);
+    border-color: rgba(255,255,255, 1);
+    color: white;
+  }
+
+  .btn:focus {
+    outline:none;
+    border: 1px solid rgba(255,255,255,.75);
+  }
 }
 
 hr {
