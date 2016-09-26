@@ -67,6 +67,26 @@ a {
   margin-top: 15px;
   margin-bottom: 15px; 
   width: 85%;
+
+    // need to add an animation
+  .btn:hover {
+    background-color: darken(rgba(255,255,255, .10), 100);
+    border-color: rgba(255,255,255, 1); 
+    color: white;
+    -webkit-transition: background-color .5s;
+    transition: background-color .5s;
+  }
+
+  .btn:active {
+    background-color: rgba(0,34,45, .50);
+    border-color: rgba(255,255,255, 1);
+    color: white;
+  }
+
+  .btn:focus {
+    outline:none;
+    border: 1px solid rgba(255,255,255,.75);
+  }
 }
 
 .fa {

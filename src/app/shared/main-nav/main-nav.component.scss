@@ -17,11 +17,6 @@
 		height: 60px;
 	}
 
-	.active {
-		background-color: rgba(255,255,255,.25);
-		color: rgba(255,255,255,1);
-	}
-
 	.links {
 		padding-right: 15px;
 		padding-left: 15px;
@@ -29,13 +24,19 @@
 		margin-bottom: 0px;
 
 		@media(max-width: 768px) {
-			background-color: rgba(255,255,255, .75);
+			background-color: rgba(255,255,255, .85);
+			margin-top: 0px;
 		}
 	}
-
+	
 	li {
-		color: white;
+		color: #262D35;
 		border: 1px solid rgba(255,255,255, 0);
+	}
+
+	.active {
+		background-color: rgba(255,255,255,.25);
+		color: rgba(255,255,255,1);
 	}
 	
 	li:hover {
@@ -49,9 +50,7 @@
 
 	a {
 		color: rgba(255,255,255, 1);
-		font-family: 'Raleway', sans-serif;
-  		color: rgba(255,255,255, 1);
-  		font-family: 'Orbitron', sans-serif;
+  	font-family: 'Orbitron', sans-serif;
 	}
 	
 	a img.saturn-icon {
