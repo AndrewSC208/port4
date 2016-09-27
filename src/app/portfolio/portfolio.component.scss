@@ -8,6 +8,7 @@ h2 {
 
 .site-wrapper {
 	color: rgba(255,255,255, 1);
+  background-color: #819FC2;
 }
 
 .site-wrapper-inner {
@@ -28,11 +29,17 @@ h2 {
 /* Cover: This is the centered container element in the middle of the page */
 .cover {
   position: absolute;
-  top: 50%;
-  width: 100%;
-  height: 100%;
-  transform: translate(0, -50%);
   background-color: #262D35;
+  background-attachment: fixed;
+
+  @media(min-width: 768px) {
+    top: 50%;
+    width: 100%;
+    height: 100%;
+    transform: translate(0, -50%);
+    background-attachment: scroll;
+
+  }
 }
 
 .deck {

@@ -32,25 +32,44 @@
 	li {
 		color: #262D35;
 		border: 1px solid rgba(255,255,255, 0);
+
+		@media(max-width: 768px) {
+			color: #262D35;
+			border: 1px solid rgba(255,255,255, 0);
+		}
 	}
 
 	.active {
-		background-color: rgba(255,255,255,.25);
+		background-color: rgba(255,255,255, .25);
 		color: rgba(255,255,255,1);
+
+		@media(max-width: 768px) {
+			background-color: rgba(38,45,53, .50);
+			color: rgba(255,255,255,1);
+		}
 	}
 	
 	li:hover {
-		border: 1px solid rgba(255,255,255, .75);
+		border: 1px solid rgba(255,255,255, 1);
 		-webkit-transition: border .5s;
-    	transition: border .5s;
+    transition: border .5s;
 		background-color: lighten(rgba(255,255,255,.25), 100);
 		-webkit-transition: background-color .5s;
-    	transition: background-color .5s;
+    transition: background-color .5s;
+
+    @media(max-width: 768px) {
+			border: 1px solid #262D35;
+		}
 	}
 
 	a {
+		
 		color: rgba(255,255,255, 1);
   	font-family: 'Orbitron', sans-serif;
+
+  	@media(max-width: 768px) {
+			color: #262D35;	
+		}
 	}
 	
 	a img.saturn-icon {
