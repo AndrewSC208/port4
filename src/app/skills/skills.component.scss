@@ -28,24 +28,25 @@ li {
 /* Padding for spacing */
 .inner {
   padding-top: 60px;
+  height: 100%;
 }
 
 /* Cover: This is the centered container element in the middle of the page */
 .cover {
   position: absolute;
   background-color: #262D35;
+  background-repeat: no-repeat;
+  background-position: center;
   background-attachment: fixed;
-
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  
   @media(min-width: 768px) {
-    top: 50%;
     width: 100%;
-    height: 100%;
-    transform: translate(0, -50%);
-    background-attachment: scroll;
-
   }
 }
-
 
 .vcenter {
     display: flex;

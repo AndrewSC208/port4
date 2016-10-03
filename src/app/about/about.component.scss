@@ -20,9 +20,15 @@ h1 {
 
 // component placement
 .site-wrapper {
-  height: 100%;
 	color: rgba(255,255,255, 1);
   background-color: #819FC2;
+  display: table;
+  width: 100%;
+  height: 100%; /* For at least Firefox */
+  min-height: 100%;
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%)
 }
 
 .site-wrapper-inner {
@@ -38,7 +44,6 @@ h1 {
 /* Padding for spacing */
 .inner {
   padding-top: 60px;
-  padding-bottom: 60px;
 }
 
 /* Cover: This is the centered container element in the middle of the page */

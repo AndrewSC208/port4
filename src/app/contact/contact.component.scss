@@ -12,6 +12,13 @@ h1 {
 // component placement
 .site-wrapper {
 	color: rgba(255,255,255, 1);
+  display: table;
+  width: 100%;
+  height: 100%; /* For at least Firefox */
+  min-height: 100%;
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%)
 }
 
 .site-wrapper-inner {
@@ -30,19 +37,31 @@ h1 {
 }
 
 /* Cover: This is the centered container element in the middle of the page */
+// old:
+// .cover {
+//   position: absolute;
+//   background-color: #262D35;
+//   background-repeat: no-repeat;
+//   background-position: center;
+//   background-attachment: fixed;
+//   -webkit-background-size: cover;
+//   -moz-background-size: cover;
+//   -o-background-size: cover;
+//   background-size: cover;
+  
+//   @media(min-width: 768px) {
+//     width: 100%;
+//   }
+// }
+
+/* Cover: This is the centered container element in the middle of the page */
 .cover {
   position: absolute;
+  top: 50%;
+  width: 100%;
+  height: 100%;
+  transform: translate(0, -50%);
   background-color: #262D35;
-  background-attachment: fixed;
-
-  @media(min-width: 768px) {
-    top: 50%;
-    width: 100%;
-    height: 100%;
-    transform: translate(0, -50%);
-    background-attachment: scroll;
-
-  }
 }
 
 .contact-block {
